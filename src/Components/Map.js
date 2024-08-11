@@ -1,13 +1,11 @@
 // AIzaSyAb3PzN3_KiTTlGkbrbIKEOSwlugzjKj-8 5b2ebd48f1f138e
 "use client";
 
-import { useState } from "react";
 import {
   APIProvider,
   Map,
   AdvancedMarker,
   Pin,
-  InfoWindow,
 } from "@vis.gl/react-google-maps";
 import { Container } from "@mui/material";
 

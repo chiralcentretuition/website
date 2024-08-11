@@ -30,7 +30,7 @@ function Reviews() {
       }
     }
     fetchTestimonialsData();
-  }, []);
+  }, [handleReviewsUpdation]);
 
   const handleReviewsUpdation = (testimonialsData) => {
     const reviewMessage = testimonialsData[review];
