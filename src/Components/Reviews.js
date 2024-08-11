@@ -18,7 +18,7 @@ function Reviews() {
     setName(reviewMessage.name);
     setSchool(reviewMessage.school);
     setMessage(reviewMessage.message);
-  }, [testimonials]); 
+  }, [testimonials, review]); 
 
   const backBtnClick = () => {
     setReview(review <= 0 ? reviewsLength : review - 1);
