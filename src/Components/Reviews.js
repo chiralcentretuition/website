@@ -14,11 +14,14 @@ function Reviews() {
   const [review, setReview] = useState(0);
 
   const handleReviewsUpdation = useCallback((testimonials) => {
+    if (!testimonials || !review) return; 
     const reviewMessage = testimonials[review];
+    if (!reviewMessage) return; 
     setName(reviewMessage.name);
     setSchool(reviewMessage.school);
     setMessage(reviewMessage.message);
-  }, [testimonials, review]); 
+  }, [review]);
+  
 
   const backBtnClick = () => {
     setReview(review <= 0 ? reviewsLength : review - 1);
