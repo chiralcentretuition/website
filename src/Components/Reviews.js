@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "../Styles/Reviews.css";
 import { Box } from "@mui/material";
 import supabase from "../Config/supabaseClient";
@@ -12,6 +12,23 @@ function Reviews() {
 
   const [reviewsLength, setReviewsLength] = useState(0);
   const [review, setReview] = useState(0);
+
+  const handleReviewsUpdation = useCallback((testimonials) => {
+    const reviewMessage = testimonials[review];
+    setName(reviewMessage.name);
+    setSchool(reviewMessage.school);
+    setMessage(reviewMessage.message);
+  }, [testimonials]); 
+
+  const backBtnClick = () => {
+    setReview(review <= 0 ? reviewsLength : review - 1);
+    handleReviewsUpdation(testimonials);
+  };
+
+  const frontBtnClick = () => {
+    setReview(review >= reviewsLength ? 0 : review + 1);
+    handleReviewsUpdation(testimonials);
+  };
 
   useEffect(() => {
     const fetchTestimonialsData = async() => {
@@ -31,23 +48,6 @@ function Reviews() {
     }
     fetchTestimonialsData();
   }, [handleReviewsUpdation]);
-
-  const handleReviewsUpdation = (testimonialsData) => {
-    const reviewMessage = testimonialsData[review];
-    setName(reviewMessage.name);
-    setSchool(reviewMessage.school);
-    setMessage(reviewMessage.message);
-  };
-
-  const backBtnClick = () => {
-    setReview(review <= 0 ? reviewsLength : review - 1);
-    handleReviewsUpdation(testimonials);
-  };
-
-  const frontBtnClick = () => {
-    setReview(review >= reviewsLength ? 0 : review + 1);
-    handleReviewsUpdation(testimonials);
-  };
 
   return (
     <div className="review-section" id="reviews">
