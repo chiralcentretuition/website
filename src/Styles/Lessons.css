@@ -1,0 +1,95 @@
+.lesson-section {
+    padding: 0 32px;
+    text-align: center;
+    background-color: white;
+}
+.lesson-title-content {
+    margin: 64px 0 64px 0;
+}
+.lesson-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.lesson-title > span {
+    position: relative;
+}
+.lesson-title span::before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: #BB3E79;
+    border-radius: 8px;
+    left: 0;
+    bottom: -12px;
+}
+.lesson-description {
+    margin: 64px;
+    text-align: center;
+    color: rgb(77, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 1.8rem;
+}
+/* Cards */
+.lesson-cards-content {
+    margin: 64px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+.lesson-cards {
+    height: auto;
+    padding: 12px;
+    border: 2px solid #d7d3d3;
+    border-radius: 12px;
+    background-color: white;
+    position: relative;
+}
+.lesson-card-title {
+    margin: 32px 0 16px 0;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+.lesson-card-description {
+    margin: 24px;
+    color: rgb(77, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 1.5rem;
+}
+.lesson-card-icon {
+    position: absolute;
+    top: -24px;
+    left: 47%;
+    padding: 10px;
+    background-color: #DCE6FF;
+    border-radius: 30px;
+}
+.lesson-fa-icon {
+    color: #00008D;
+    font-size: 24px;
+}
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .lesson-cards-content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .lesson-cards-content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .lesson-cards {
+      margin: auto;
+    }
+  }
+  
