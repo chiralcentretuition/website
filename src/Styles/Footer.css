@@ -145,12 +145,23 @@
 }
 /* Responsive */
 @media screen and (max-width: 700px) {
+    .ft-title {
+        font-size: 20px;
+    }
     .footer-container {
         padding: 24px;
     }
     .ft-description {
         width: 100%;
         margin: 16px 0 24px;
+        font-size: 16px;
+    }
+    .ft-list-title {
+        margin: 8px 0;
+        font-size: 16px;
+    }
+    .ft-list-items li {
+        font-size: 14px;
     }
     .ft-input {
         width: 100%;
@@ -164,8 +175,5 @@
         padding: 18px;
         display: block;
         text-align: center;
-    }
-    .ft-social-links {
-        margin: 16px 0 0;
     }
 }

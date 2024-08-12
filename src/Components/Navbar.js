@@ -57,12 +57,10 @@ function Navbar() {
         <FontAwesomeIcon icon={faCommentDots} /> &nbsp;Whatsapp
       </button>
 
-      {/* Mobile */}
       <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
         <div onClick={openNav} className="mobile-navbar-close">
           <FontAwesomeIcon icon={faXmark} className="hamb-icon" />
         </div>
-
         <ul className="mobile-navbar-links">
           <li>
             <Link onClick={openNav} to="/">
@@ -81,8 +79,6 @@ function Navbar() {
           </li>
         </ul>
       </div>
-
-      {/* Hamburger Icon */}
       <div className="mobile-nav">
         <FontAwesomeIcon
           icon={faBars}

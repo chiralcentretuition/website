@@ -54,7 +54,7 @@
     border: 1px solid #00008D;
 }
 .text-stats {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -109,9 +109,18 @@
     z-index: 20;
     cursor: pointer;
 }  
-.show-scroll {
-  display: flex;
-}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}  
+  
 /* Responsive */
 @media screen and (max-width: 900px) {
     .hero-image-section {
@@ -139,6 +148,7 @@
         font-size: 16px;
     }
     .text-stats {
+        margin-top: 0px;
         gap: 18px;
     }
     .text-stats-container > p {

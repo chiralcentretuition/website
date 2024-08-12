@@ -13,9 +13,16 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     backgroundColor: "#00008D",
     color: "white",
     fontWeight: 'bold',
+    fontSize: '16px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '12px', 
+    },
   },
   [`&.${tableCellClasses.body}`]: {
-    fontSize: 14,
+    fontSize: '14px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '12px', 
+    },
   },
 }));
 
@@ -27,7 +34,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 export default function CustomizedTables( rows ) {
   return (
-    <TableContainer component={Paper} sx={{ width: '70%', margin: 'auto', borderRadius: '12px' }}>
+    <TableContainer component={Paper} sx={{ width: '90%', margin: 'auto', borderRadius: '12px' }}>
       <Table aria-label="customized table">
         <TableHead>
           <TableRow>

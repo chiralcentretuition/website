@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Tutors.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "@mui/material";
 
 function Tutors() {
@@ -20,7 +20,7 @@ function Tutors() {
         <br/>Beyond academics, she fosters a genuine interest in Chemistry, 
         guiding students to success in their A Level examinations.
         </p><br/>
-        <button
+        {/* <button
             className="text-appointment-btn"
             type="button"
             onClick={() => {
@@ -31,7 +31,7 @@ function Tutors() {
             }}
           >
             <FontAwesomeIcon icon={faCalendarCheck} /> &nbsp;Enquire for Slots Now!
-          </button>
+        </button> */}
       </div>
     </div>
     </Container>

@@ -105,22 +105,25 @@
     .review-section {
         letter-spacing: .8px;
     }
-    .rw-text-title {
-        font-size: 22px;
+    .rw-text-format {
+        margin: 32px 0;
     }
     .rw-text-desc {
         font-size: 28px;
     }
     .rw-review {
-        font-size: 22px;
+        font-size: 16px;
         letter-spacing: .7px;
         line-height: 1.8rem;
     }
     .rw-reviewer-name {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .rw-reviewer-place {
+        font-size: 16px;
     }
     .rw-next-btn {
         margin: 0 16px 0 0;
-        font-size: 40px;
+        font-size: 32px;
     }
 }

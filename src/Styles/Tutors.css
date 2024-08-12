@@ -27,11 +27,44 @@
     bottom: -12px;
 }
 .dt-description {
-    margin: 64px auto 24px;
+    margin: 64px auto -48px;
     text-align: center;
     color: rgb(77, 75, 75);
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     letter-spacing: .8px;
     line-height: 1.8rem;
+}
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .tutor-section {
+        padding-bottom: 0;
+        margin: 16px 0 0 0;
+    }
+    .dt-title-content {
+        margin: 0 0 32px 0;
+    }
+    .dt-description {
+        margin: 16px auto 4px;
+        font-size: 20px;
+    }
+    .dt-title {
+        font-size: 32px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .tutor-section {
+        padding-bottom: 0;
+        margin: 16px 0 0 0;
+    }
+    .dt-title-content {
+        margin: 0 0 16px 0;
+    }
+    .dt-description {
+        margin: 32px auto 4px;
+        font-size: 16px;
+    }
+    .dt-title {
+        font-size: 26px;
+    }
 }

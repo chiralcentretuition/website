@@ -28,10 +28,10 @@ function Footer() {
               <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <a href={"#aboutus"}>About Us</a>
+              <a href={"/#aboutus"}>About Us</a>
             </li>
             <li>
-              <a href={"#testimonials"}>Testimonials</a>
+              <a href={"/#testimonials"}>Testimonials</a>
             </li>
           </ul>
         </div>
