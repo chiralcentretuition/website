@@ -15,11 +15,11 @@ function Tutors() {
 
         <p className="dt-description">
         Cheng Mun is an accomplished H1/H2 Chemistry tutor who has a passion for excellence. 
-        <br/>With personalised attention in a 1-to-1 or small group setting, 
-        she employs innovative teaching strategies to simplify complex concepts. 
+        <br/>With <span style={{ fontWeight: 'bold' }}>personalised attention in a 1-to-1 or small group setting</span>, 
+        she employs innovative teaching strategies to <span style={{ fontWeight: 'bold' }}>simplify complex concepts</span>. 
         <br/>Beyond academics, she fosters a genuine interest in Chemistry, 
         guiding students to success in their A Level examinations.
-        </p><br/>
+        </p>
         {/* <button
             className="text-appointment-btn"
             type="button"
