@@ -109,27 +109,28 @@
         margin: 16px 0;
     }
     .rw-text-desc {
-        margin: 0;
         font-size: 22px;
         letter-spacing: .7px;
-        line-height: 2rem;
+        line-height: 1.6rem;
     }
     .rw-review {
         font-size: 12px;
         letter-spacing: .6px;
         line-height: .8rem;
-        margin: 0 0 0 0;
+        margin: 0;
     }
     .rw-reviewer-name {
         font-size: 14px;
         line-height: .8rem;
+        margin: -4px 0 0 -8px;
     }
     .rw-reviewer-place {
         font-size: 12px;
         line-height: .8rem;
+        margin: 4px 0 0 -8px;
     }
     .rw-next-btn {
-        margin: 0 16px 0 0;
         font-size: 24px;
+        margin: 0 16px 0 -8px;
     }
 }

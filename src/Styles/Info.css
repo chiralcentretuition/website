@@ -109,12 +109,13 @@
         padding: 14px;
     }
     .info-card-title {
-        margin: 8px 0 8px 0;
+        margin: 10px 0 8px 0;
         font-size: 18px;
+        line-height: 1.3rem;
     }
     .info-card-description {
         margin: 0px;
-        font-size: 9px;
-        line-height: 0.7rem;
+        font-size: 10px;
+        line-height: 0.8rem;
     }
 }
