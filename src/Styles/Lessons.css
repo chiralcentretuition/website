@@ -79,6 +79,9 @@
 
 /* Responsive */
 @media screen and (max-width: 1000px) {
+    .lesson-title-content {
+        margin: 16px 0 0 0;
+    }
     .lesson-title {
         font-size: 32px;
     }
@@ -88,6 +91,8 @@
     }
     .lesson-cards-content {
       grid-template-columns: repeat(1, 1fr);
+      margin: 48px 0;
+      
     }
     .lesson-card-icon {
         margin-left: -3%;
@@ -97,17 +102,23 @@
     }
     .lesson-card-title {
         margin: 16px 0 8px 0;
-        font-size: 20px;
+        font-size: 16px;
     }
     .lesson-card-description {
-        margin: 8px 10px 16px 10px;
-        font-size: 14px;
+        margin: 8px 8px 16px 8px;
+        font-size: 12px;
+        line-height: 1rem;
     }
 }
   
 @media screen and (max-width: 700px) {
     .lesson-title {
-        font-size: 26px;
+        font-size: 22px;
+    }
+    .lesson-description {
+        margin: 28px 0 0 0;
+        font-size: 12px;
+        line-height: 1rem;
     }
     .lesson-cards {
         margin: auto;

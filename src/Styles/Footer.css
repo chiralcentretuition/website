@@ -12,6 +12,10 @@
     border-bottom: 2px solid #293241;
     border-radius: 2px;
 }
+.ft-image1 {
+    width: 90%;
+    height: auto;
+}
 /* Title */
 .ft-title {
     color: #1A8EFD;
@@ -146,22 +150,29 @@
 /* Responsive */
 @media screen and (max-width: 700px) {
     .ft-title {
-        font-size: 20px;
+        font-size: 16px;
+    }
+    .ft-image1 {
+        width: 70%;
+        height: auto;
     }
     .footer-container {
         padding: 24px;
     }
     .ft-description {
         width: 100%;
-        margin: 16px 0 24px;
-        font-size: 16px;
+        margin: 4px 0;
+        font-size: 12px;
+        line-height: 1rem;
     }
     .ft-list-title {
         margin: 8px 0;
-        font-size: 16px;
+        font-size: 14px;
+        line-height: .1rem;
     }
     .ft-list-items li {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: .1rem;
     }
     .ft-input {
         width: 100%;

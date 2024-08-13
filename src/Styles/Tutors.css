@@ -45,8 +45,9 @@
         margin: 0 0 32px 0;
     }
     .dt-description {
-        margin: 16px auto 4px;
+        margin: 32px auto 4px;
         font-size: 20px;
+        line-height: 1.6rem;
     }
     .dt-title {
         font-size: 32px;
@@ -55,16 +56,16 @@
 @media screen and (max-width: 700px) {
     .tutor-section {
         padding-bottom: 0;
-        margin: 16px 0 0 0;
+        margin: 0;
     }
     .dt-title-content {
         margin: 0 0 16px 0;
     }
     .dt-description {
-        margin: 32px auto 4px;
-        font-size: 16px;
+        font-size: 12px;
+        line-height: 1rem;
     }
     .dt-title {
-        font-size: 26px;
+        font-size: 22px;
     }
 }

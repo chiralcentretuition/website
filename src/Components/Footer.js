@@ -14,7 +14,7 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-              <img className="hero-image1" src={footerlogo} alt="FooterLogo" />
+              <img className="ft-image1" src={footerlogo} alt="FooterLogo" />
             </p>
             <p className="ft-description">
             Unlock academic success with Chiral Centre - personalised tutoring, innovative learning, and expert guidance for A Level Chemistry excellence.

@@ -11,14 +11,6 @@
     width: 70%;
     padding: 0 32px;
 }
-.text-headline {
-    margin-bottom: 12px;
-    color: rgb(77, 75, 75);
-    font-family: 'Rubik', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: .7px;
-}
 .text-title {
     width: 500px;
     color: black;
@@ -26,16 +18,7 @@
     font-size: 40px;
     font-weight: bold;
 }
-.text-descritpion {
-    width: 475px;
-    margin: 32px 0;
-    color: rgb(77, 75, 75);
-    font-family: 'Rubik', sans-serif;
-    font-size: 18px;
-    letter-spacing: .7px;
-    line-height: 1.6rem;
-}
-.text-appointment-btn {
+/* .text-appointment-btn {
     padding: 14px 20px;
     color: white;
     border: 1px solid transparent;
@@ -52,7 +35,7 @@
     color: #00008D;
     background-color: transparent;
     border: 1px solid #00008D;
-}
+} */
 .text-stats {
     margin-top: 20px;
     display: flex;
@@ -84,10 +67,6 @@
 }
 .hero-image1 {
     width: 90%;
-    height: auto;
-}
-.hero-image2 {
-    width: 10%;
     height: auto;
 }
 /* Scroll Btn */
@@ -130,32 +109,26 @@
         width: 100%;
         padding: 0;
     }
-    .text-title, .text-descritpion {
+    .text-title {
         width: 100%;
     }
 }
 @media screen and (max-width: 600px) {
-    .text-headline {
-        font-size: 20px;
-    }
     .text-title {
-        font-size: 28px;
+        font-size: 24px;
     }
-    .text-descritpion {
+    /* .text-appointment-btn {
         font-size: 16px;
-    }
-    .text-appointment-btn {
-        font-size: 16px;
-    }
+    } */
     .text-stats {
         margin-top: 0px;
         gap: 18px;
     }
     .text-stats-container > p {
-        font-size: 16px;
+        font-size: 12px;
     }
     .text-stats-container p:first-child {
-        font-size: 22px;
+        font-size: 20px;
     }
     .scroll-up {
         bottom: 32px;

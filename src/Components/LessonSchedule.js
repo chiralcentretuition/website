@@ -15,26 +15,35 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     fontWeight: 'bold',
     fontSize: '16px',
     [theme.breakpoints.down('sm')]: {
-      fontSize: '12px', 
+      fontSize: '12px',
+      lineHeight: '.2rem',
     },
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: '14px',
     [theme.breakpoints.down('sm')]: {
-      fontSize: '12px', 
+      fontSize: '12px',
+      lineHeight: '.2rem',
     },
   },
 }));
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
+const StyledTableRow = styled(TableRow)(() => ({
   '&:last-child td, &:last-child th': {
     border: 0,
   },
 }));
 
-export default function CustomizedTables( rows ) {
+export default function CustomizedTables({ rows }) {
   return (
-    <TableContainer component={Paper} sx={{ width: '90%', margin: 'auto', borderRadius: '12px' }}>
+    <TableContainer
+      component={Paper}
+      sx={{
+        width: { xs: '100%', md: '90%', lg: '80%' }, 
+        margin: 'auto',
+        borderRadius: '12px',
+      }}
+    >
       <Table aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -43,9 +52,11 @@ export default function CustomizedTables( rows ) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.rows.map((row) => (
+          {rows.map((row) => (
             <StyledTableRow key={row.id}>
-              <StyledTableCell align="center" component="th" scope="row">{row.day}</StyledTableCell>
+              <StyledTableCell align="center" component="th" scope="row">
+                {row.day}
+              </StyledTableCell>
               <StyledTableCell align="center">{row.time}</StyledTableCell>
             </StyledTableRow>
           ))}
