@@ -114,6 +114,9 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .hero-section {
+        padding: 16px 32px;
+    }
     .text-title {
         font-size: 24px;
     }
@@ -126,6 +129,7 @@
     }
     .text-stats-container > p {
         font-size: 12px;
+        line-height: 1rem;
     }
     .text-stats-container p:first-child {
         font-size: 20px;
