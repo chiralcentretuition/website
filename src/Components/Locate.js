@@ -20,7 +20,7 @@ function Locate() {
     <div
       onClick={() => {
         window.open(
-          "https://wa.me/6590604833?text=Hi,%20I%20am%20interested%20in%20enrolling%20for%20the%20H1%2FH2%20Chemistry%20tuition%20and%20would%20like%20to%20inquire%20about%20available%20slots%20and%20enrollment%20process.%20Could%20you%20please%20provide%20more%20details%3F%20Thank%20you!",
+          "https://wa.me/6590604833?text=Hi,%20I%20am%20interested%20in%20enrolling%20for%20the%20H1%2FH2%20Chemistry%20tuition%20and%20would%20like%20to%20inquire%20about%20the%20enrollment%20process.%0AClass%20Type:%201-1%20/%20Small%20Group%0ATimeslot:%0AYear:%20J1%20/%20J2%0ALevel:%20H1%20/%20H2%0ASchool:%20",
           "_blank"
         );
       }}

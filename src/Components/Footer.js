@@ -28,10 +28,10 @@ function Footer() {
               <Link to={"/"}>Home</Link>
             </li>
             <li>
-              <a href={"/#aboutus"}>About Us</a>
+              <a href={"/timeslots"}>Timeslots</a>
             </li>
             <li>
-              <a href={"/#testimonials"}>Testimonials</a>
+              <a href={"/locateus"}>Locate Us</a>
             </li>
           </ul>
         </div>
@@ -50,7 +50,7 @@ function Footer() {
           <p className="ft-list-title">Contact Us</p>
           <ul className="ft-list-items">
             <li>
-              <a href="https://wa.me/6590604833?text=Hi,%20I%20am%20interested%20in%20enrolling%20for%20the%20H1%2FH2%20Chemistry%20tuition%20and%20would%20like%20to%20inquire%20about%20available%20slots%20and%20enrollment%20process.%20Could%20you%20please%20provide%20more%20details%3F%20Thank%20you!" 
+              <a href="https://wa.me/6590604833?text=Hi,%20I%20am%20interested%20in%20enrolling%20for%20the%20H1%2FH2%20Chemistry%20tuition%20and%20would%20like%20to%20inquire%20about%20the%20enrollment%20process.%0AClass%20Type:%201-1%20/%20Small%20Group%0ATimeslot:%0AYear:%20J1%20/%20J2%0ALevel:%20H1%20/%20H2%0ASchool:%20" 
               target="_blank" 
               rel="noreferrer">
               <FontAwesomeIcon icon={faCommentDots} /> &nbsp;Whatsapp +65 90604833

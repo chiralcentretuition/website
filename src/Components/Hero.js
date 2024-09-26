@@ -7,6 +7,9 @@ import "../Styles/Hero.css";
 import { Box } from "@mui/material";
 
 function Hero() {
+
+  const yearsSince2015 = new Date().getFullYear() - 2015;
+
   return (
     <div className="section-container">
       <div className="hero-section">
@@ -16,18 +19,6 @@ function Hero() {
               Chemistry Tuition for Junior College Students
             </h2>
             <br />
-            {/* <button
-              className="text-appointment-btn"
-              type="button"
-              onClick={() => {
-                window.open(
-                  "https://wa.me/6590604833?text=Hi,%20I%20am%20interested%20in%20enrolling%20for%20the%20H1%2FH2%20Chemistry%20tuition%20and%20would%20like%20to%20inquire%20about%20available%20slots%20and%20enrollment%20process.%20Could%20you%20please%20provide%20more%20details%3F%20Thank%20you!",
-                  "_blank"
-                );
-              }}
-            >
-              <FontAwesomeIcon icon={faCalendarCheck} /> &nbsp;Enquire for Slots
-            </button> */}
             <div className="text-stats">
               <div className="text-stats-container">
                 <p>100%</p>
@@ -40,7 +31,7 @@ function Hero() {
               </div>
 
               <div className="text-stats-container">
-                <p>8+</p>
+                <p>{yearsSince2015}+</p>
                 <p>Years of Experience</p>
               </div>
             </div>
@@ -49,11 +40,10 @@ function Hero() {
         <div className="hero-image-section">
           <img className="hero-image1" src={Tutor} alt="Tutor" />
         </div>
-        {/* WhatsApp Button */}
         <div
           onClick={() => {
             window.open(
-              "https://wa.me/6590604833?text=Hi,%20I%20am%20interested%20in%20enrolling%20for%20the%20H1%2FH2%20Chemistry%20tuition%20and%20would%20like%20to%20inquire%20about%20available%20slots%20and%20enrollment%20process.%20Could%20you%20please%20provide%20more%20details%3F%20Thank%20you!",
+              "https://wa.me/6590604833?text=Hi,%20I%20am%20interested%20in%20enrolling%20for%20the%20H1%2FH2%20Chemistry%20tuition%20and%20would%20like%20to%20inquire%20about%20the%20enrollment%20process.%0AClass%20Type:%201-1%20/%20Small%20Group%0ATimeslot:%0AYear:%20J1%20/%20J2%0ALevel:%20H1%20/%20H2%0ASchool:%20",
               "_blank"
             );
           }}

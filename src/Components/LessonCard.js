@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import CustomizedTables from "./LessonSchedule";
+import LessonSchedule from "./LessonSchedule";
 
 function LessonCard(props) {
   return (
@@ -10,8 +10,8 @@ function LessonCard(props) {
       </span>
       <p className="lesson-card-title">{props.title}</p>
       <p className="lesson-card-description">{props.description}</p>
-      <CustomizedTables className="lesson-card-table" rows={props.rows} />
-      <br/><br/>
+      <LessonSchedule className="lesson-card-table" rows={props.rows} />
+      <br/>
     </div>
   );
 }

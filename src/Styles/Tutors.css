@@ -35,6 +35,16 @@
     letter-spacing: .8px;
     line-height: 1.8rem;
 }
+ul {
+    list-style-position: inside; 
+    padding-left: 0;
+    margin-left: 0;
+}
+li {
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+  
 /* Responsive */
 @media screen and (max-width: 1000px) {
     .tutor-section {
