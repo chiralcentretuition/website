@@ -36,7 +36,7 @@ export default function LessonSchedule({ rows }) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {sortedRows.map((row) => (
             <StyledTableRow key={row.id}>
               <StyledTableCell align="center" component="th" scope="row">
                 {row.day}
