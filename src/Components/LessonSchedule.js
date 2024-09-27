@@ -80,6 +80,8 @@ export default function LessonSchedule({ rows }) {
         width: { xs: '100%', md: '90%', lg: '80%' }, 
         margin: 'auto',
         borderRadius: '12px',
+        borderLeft: '1px solid #ccc', 
+        borderRight: '1px solid #ccc', 
       }}
     >
       <Table aria-label="customized table">
